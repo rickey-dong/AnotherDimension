@@ -20,5 +20,9 @@ public class Tester
     System.out.println("------------------------------------");
     int[][] konstanA = { {1, 0, 12, -1}, {7, -2, 2, 1}, {-5, -2, 2, -9} };
     System.out.println(Arrays.toString(ArrayOps.sumRows(konstanA)) + " should be [12, 8, -14]");
+    int[][] sumrowsA = { {3, 4, 6, 7}, {4, 2, 10, -20}, {0, 0, 0, 5}};
+    System.out.println(Arrays.toString(ArrayOps.sumRows(sumrowsA)) + " should be [20, -4, 5]");
+    int[][] sumrowsB = { {}, {}, {5, 3, 2, 5}};
+    System.out.println(Arrays.toString(ArrayOps.sumRows(sumrowsB)) + " should be [0, 0, 15]");
   }
 }

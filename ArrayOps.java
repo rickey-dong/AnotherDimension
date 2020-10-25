@@ -21,11 +21,16 @@ public class ArrayOps
     }
     return biggest;
   }
-  /*public static int[] sumRows(int[][] matrix)
+  public static int[] sumRows(int[][] matrix)
   {
-
+    int[] sumOfTheRows = new int[matrix.length];
+    for (int subarray = 0; subarray < matrix.length; subarray++)
+    {
+      sumOfTheRows[subarray] = sum(matrix[subarray]);
+    }
+    return sumOfTheRows;
   }
-  public static int[] largestInRows(int[][] matrix)
+  /*public static int[] largestInRows(int[][] matrix)
   {
 
   }
