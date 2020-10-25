@@ -39,11 +39,17 @@ public class ArrayOps
     }
     return biggestOfTheRows;
   }
-  /*public static int sum(int[][] arr)
+  public static int sum(int[][] arr)
   {
-
+    int totalSum = 0;
+    int[] rowSum = sumRows(arr);
+    for (int number = 0; number < arr.length; number++)
+    {
+      totalSum = totalSum + rowSum[number];
+    }
+    return totalSum;
   }
-  public static int[] sumCols(int[][] matrix)
+  /*public static int[] sumCols(int[][] matrix)
   {
 
   }
