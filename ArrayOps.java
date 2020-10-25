@@ -9,11 +9,19 @@ public class ArrayOps
     }
     return total;
   }
-  /*public static int largest(int[] arr)
+  public static int largest(int[] arr)
   {
-
+    int biggest = arr[0];
+    for (int number = 1; number < arr.length; number++)
+    {
+      if (arr[number] > biggest)
+      {
+        biggest = arr[number];
+      }
+    }
+    return biggest;
   }
-  public static int[] sumRows(int[][] matrix)
+  /*public static int[] sumRows(int[][] matrix)
   {
 
   }
