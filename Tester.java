@@ -69,5 +69,15 @@ public class Tester
     System.out.println(ArrayOps.isColMagic(thisisColMagic) + " should be true");
     System.out.println(ArrayOps.isColMagic(thisisBoth) + " should be true");
     System.out.println(ArrayOps.isColMagic(sumrowsA) + " should be false");
+    System.out.println("------------------------------------");
+    System.out.println("Is the Sum of this Row Equal to the Sum of this Column?:");
+    int[][] E = { {2,4,2}, {2,2,2} };
+    System.out.println(ArrayOps.isLocationMagic(E,0,1) + " should be false");
+    System.out.println(ArrayOps.isLocationMagic(E,1,1) + " should be true");
+    int[][] F = { {5,7,8}, {6,6,6}, {7,7,0}};
+    System.out.println(ArrayOps.isLocationMagic(F,2,2) + " should be true");
+    System.out.println(ArrayOps.isLocationMagic(F,0,1) + " should be true");
+    System.out.println(ArrayOps.isLocationMagic(F,1,0) + " should be true");
+    System.out.println(ArrayOps.isLocationMagic(F,1,2) + " should be false");
   }
 }
