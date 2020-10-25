@@ -49,11 +49,21 @@ public class ArrayOps
     }
     return totalSum;
   }
-  /*public static int[] sumCols(int[][] matrix)
+  public static int[] sumCols(int[][] matrix)
   {
-
+    int[] sumOfTheColumns = new int[(matrix[0]).length];
+    for (int column = 0; column < matrix[0].length; column++)
+    {
+      int tempSum = 0;
+      for (int subarray = 0; subarray < matrix.length; subarray++)
+      {
+        tempSum = tempSum + (matrix[subarray])[column];
+        sumOfTheColumns[column] = tempSum;
+      }
+    }
+    return sumOfTheColumns;
   }
-  public static boolean isRowMagic(int[][] matrix)
+  /*public static boolean isRowMagic(int[][] matrix)
   {
 
   }

@@ -39,5 +39,13 @@ public class Tester
     System.out.println(ArrayOps.sum(sumrowsB) + " should be 15");
     System.out.println(ArrayOps.sum(sumrowsC) + " should be 0");
     System.out.println(ArrayOps.sum(largest2D) + " should be 134");
+    System.out.println("------------------------------------");
+    System.out.println(Arrays.toString(ArrayOps.sumCols(konstanA)) + " should be [3, -4, 16, -9]");
+    System.out.println(Arrays.toString(ArrayOps.sumCols(sumrowsA)) + " should be [7, 6, 16, -8]");
+    System.out.println(Arrays.toString(ArrayOps.sumCols(largest2D)) + " should be [24, 58, 62, -10]");
+    int[][] testSumCol = { {}, {}, {} };
+    System.out.println(Arrays.toString(ArrayOps.sumCols(testSumCol)) + " should be []");
+    int[][] testSumColA = { {} };
+    System.out.println(Arrays.toString(ArrayOps.sumCols(testSumColA)) + " should be []");
   }
 }
