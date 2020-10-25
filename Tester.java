@@ -26,5 +26,10 @@ public class Tester
     System.out.println(Arrays.toString(ArrayOps.sumRows(sumrowsB)) + " should be [0, 0, 15]");
     int[][] sumrowsC = {};
     System.out.println(Arrays.toString(ArrayOps.sumRows(sumrowsC)) + " should be []");
+    System.out.println("------------------------------------");
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(konstanA)) + " should be [12, 7, 2]");
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(sumrowsA)) + " should be [7, 10, 5]");
+    int[][] largest2D = { {4, 5, 6, 2,}, {10, 30, 50, -20}, {10, 23, 6, 8}};
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(largest2D)) + " should be [6, 50, 23]");
   }
 }

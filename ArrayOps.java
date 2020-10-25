@@ -30,11 +30,16 @@ public class ArrayOps
     }
     return sumOfTheRows;
   }
-  /*public static int[] largestInRows(int[][] matrix)
+  public static int[] largestInRows(int[][] matrix)
   {
-
+    int[] biggestOfTheRows = new int[matrix.length];
+    for (int subarray = 0; subarray < matrix.length; subarray++)
+    {
+      biggestOfTheRows[subarray] = largest(matrix[subarray]);
+    }
+    return biggestOfTheRows;
   }
-  public static int sum(int[][] arr)
+  /*public static int sum(int[][] arr)
   {
 
   }
