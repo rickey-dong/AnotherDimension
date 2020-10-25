@@ -4,6 +4,8 @@ public class Tester
 {
   public static void main(String[] args)
   {
+    int[] konstanB = {1, 3, 5};
+    System.out.println(ArrayOps.sum(konstanB) + " should be 9");
     int[] suma = {3, 5, 7, 6, 4};
     System.out.println(ArrayOps.sum(suma) + " should be 25");
     int[] sumb = {2, 7, 0, 4};
