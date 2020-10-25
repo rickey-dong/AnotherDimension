@@ -75,11 +75,19 @@ public class ArrayOps
     }
     return true;
   }
-  /*public static boolean isColMagic(int[][] matrix)
+  public static boolean isColMagic(int[][] matrix)
   {
-
+    int[] allOfTheColumns = sumCols(matrix);
+    for (int number = 1; number < allOfTheColumns.length; number++)
+    {
+      if (allOfTheColumns[number] != allOfTheColumns[number - 1])
+      {
+        return false;
+      }
+    }
+    return true;
   }
-  public static boolean isLocationMagic(int[][] matrix, int row, int col)
+  /*public static boolean isLocationMagic(int[][] matrix, int row, int col)
   {
 
   }*/
