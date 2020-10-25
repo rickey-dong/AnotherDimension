@@ -63,11 +63,19 @@ public class ArrayOps
     }
     return sumOfTheColumns;
   }
-  /*public static boolean isRowMagic(int[][] matrix)
+  public static boolean isRowMagic(int[][] matrix)
   {
-
+    int[] allOfTheRows = sumRows(matrix);
+    for (int number = 1; number < allOfTheRows.length; number++)
+    {
+      if (allOfTheRows[number] != allOfTheRows[number - 1])
+      {
+        return false;
+      }
+    }
+    return true;
   }
-  public static boolean isColMagic(int[][] matrix)
+  /*public static boolean isColMagic(int[][] matrix)
   {
 
   }

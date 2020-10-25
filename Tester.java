@@ -47,5 +47,13 @@ public class Tester
     System.out.println(Arrays.toString(ArrayOps.sumCols(testSumCol)) + " should be []");
     int[][] testSumColA = { {} };
     System.out.println(Arrays.toString(ArrayOps.sumCols(testSumColA)) + " should be []");
+    System.out.println("------------------------------------");
+    int[][] thisisRowMagic = { {1,2,3,4}, {2,3,4,1}, {3,4,1,2} };
+    System.out.println(ArrayOps.isRowMagic(thisisRowMagic) + " should be true");
+    int[][] thisisColMagic = { {1,1,1}, {2,2,2}, {3,3,3}};
+    System.out.println(ArrayOps.isRowMagic(thisisColMagic) + " should be false");
+    int[][] thisisBoth = { {2,2,2}, {2,2,2} };
+    System.out.println(ArrayOps.isRowMagic(thisisBoth) + " should be true");
+    System.out.println(ArrayOps.isRowMagic(sumrowsA) + " should be false");
   }
 }
