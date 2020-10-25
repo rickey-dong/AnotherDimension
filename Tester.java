@@ -24,5 +24,7 @@ public class Tester
     System.out.println(Arrays.toString(ArrayOps.sumRows(sumrowsA)) + " should be [20, -4, 5]");
     int[][] sumrowsB = { {}, {}, {5, 3, 2, 5}};
     System.out.println(Arrays.toString(ArrayOps.sumRows(sumrowsB)) + " should be [0, 0, 15]");
+    int[][] sumrowsC = {};
+    System.out.println(Arrays.toString(ArrayOps.sumRows(sumrowsC)) + " should be []");
   }
 }
